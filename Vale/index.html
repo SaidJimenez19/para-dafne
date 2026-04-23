@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Dafne 💖</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<!-- 🎁 REGALO -->
+<div id="gift-screen">
+    <div class="gift-box" id="openGift">🎁</div>
+    <p>Tengo un regalo para ti</p>
+</div>
+
+<!-- 🎬 HISTORIA -->
+<div id="story">
+
+    <div id="progress"></div>
+
+    <div class="scene active">
+        <h1>Dafne Valeria 💖</h1>
+        <p>No es una página… es algo para ti</p>
+    </div>
+
+    <div id="dynamic-scenes"></div>
+
+    <div class="scene final">
+        <h1 class="happy">🎉 Feliz Cumpleaños 🎉</h1>
+
+        <svg viewBox="0 0 512 512" class="heart">
+            <path id="heart-path"
+            d="M256 464l-16-16C118 336 48 272 48 192 48 128 96 80 160 80c32 0 64 16 96 48 32-32 64-48 96-48 64 0 112 48 112 112 0 80-70 144-192 256l-16 16z"/>
+        </svg>
+
+        <p id="final-text"></p>
+    </div>
+
+</div>
+
+<audio id="music" src="assets/music/music.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
